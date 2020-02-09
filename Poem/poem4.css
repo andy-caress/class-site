@@ -1,0 +1,164 @@
+#title {
+  text-transform: uppercase;
+  font-family: halyard-display, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 160px;
+  color: white;
+  text-shadow:
+    -1px -1px 0 #ff0000,
+    0 -1px 0 #ff0000,
+    1px -1px 0 #ff0000,
+    1px 0 0 #ff0000,
+    1px 1px 0 #ff0000,
+    0 1px 0 #ff0000,
+    -1px 1px 0 #ff0000,
+    -1px 0 0 #ff0000;
+  z-index: -1;
+  position: fixed;
+  /* text-align: center; */
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  white-space: nowrap;
+  letter-spacing: 10px;
+}
+
+/* #b:hover {
+  font-family: halyard-micro, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 120px;
+  text-shadow:
+    -.5px -.5px 0 #0000ff,
+    0 -.5px 0 #0000ff,
+    .5px -.5px 0 #0000ff,
+    .5px 0 0 #0000ff,
+    .5px .5px 0 #0000ff,
+    0 .5px 0 #0000ff,
+    -.5px .5px 0 #0000ff,
+    -.5px 0 0 #0000ff;
+} */
+
+div#title span#a {
+  display: inline;
+}
+
+div#title:hover span#a {
+  display: none;
+}
+
+div#title span#b {
+  display: none;
+}
+
+div#title:hover span#b {
+  display: inline;
+}
+
+.body {
+  font-family: halyard-text, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.35rem;
+  background-color: #eee;
+}
+
+#head {
+  /* text-transform: uppercase; */
+  font-family: halyard-display, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 80px;
+  color: #0000ff;
+  white-space: nowrap;
+  text-align: center;
+  padding-top: 3rem;
+  top: 50%;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+
+}
+
+div#head span#c {
+  display: inline;
+}
+
+div#head:hover span#c {
+  display: none;
+}
+
+div#head span#d {
+  display: none;
+}
+
+div#head:hover span#d {
+  display: inline;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  padding: 10px;
+}
+
+#p1 {
+  font-family: halyard-text, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  color: #0000ff;
+  white-space: nowrap;
+  text-align: center;
+  line-height: 40px;
+  opacity: 85%;
+}
+
+div#p1 span#e {
+  display: inline;
+}
+
+div#p1:hover span#e {
+  display: none;
+}
+
+div#p1 span#f {
+  display: none;
+}
+
+div#p1:hover span#f {
+  display: inline;
+}
+
+#end {
+  font-family: halyard-text, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  color: #0000ff;
+  white-space: nowrap;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 30px;
+}
+
+div#end span#g {
+  display: inline;
+}
+
+div#end:hover span#g {
+  display: none;
+}
+
+div#end span#h {
+  display: none;
+}
+
+div#end:hover span#h {
+  display: inline;
+}
