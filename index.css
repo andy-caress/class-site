@@ -19,6 +19,9 @@ img {
   font-style: normal;
   font-size: 120px;
   color: #0000ff;
+  /* mix-blend-mode: difference;
+  background-color: transparent;
+  color: #fff; */
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
@@ -27,11 +30,14 @@ img {
 }
 
 #b:hover {
-  font-family: halyard-micro, sans-serif;
+  font-family: halyard-display, sans-serif;
   font-weight: 300;
   font-style: italic;
   font-size: 120px;
   color: #0000ff;
+  /* mix-blend-mode: difference;
+  background-color: transparent;
+  color: #fff; */
 }
 
 div#name span#a {
@@ -100,21 +106,33 @@ div#name:hover span#b {
 }
 
 .btn:hover {
-  background: #ffffff;
+  /* background: #ffffff; */
   flex-direction: row;
-  -webkit-text-fill-color: white;
+  mix-blend-mode: difference;
+  background: transparent;
+  background: #fff;
+  text-shadow: none;
+  /* -webkit-text-fill-color: white; */
 }
 
 .btn2:hover {
-  background: #ffffff;
+  /* background: #ffffff; */
   flex-direction: row;
-  -webkit-text-fill-color: white;
+  mix-blend-mode: difference;
+  background: transparent;
+  background: #fff;
+  text-shadow: none;
+  /* -webkit-text-fill-color: white; */
 }
 
 .btn3:hover {
-  background: #ffffff;
+  /* background: #ffffff; */
   flex-direction: row;
-  -webkit-text-fill-color: white;
+  mix-blend-mode: difference;
+  background: transparent;
+  background: #fff;
+  text-shadow: none;
+  /* -webkit-text-fill-color: white; */
 }
 
 .poem1-btn {
@@ -235,7 +253,7 @@ div#name:hover span#b {
   font-weight: 300;
   font-style: normal;
   color: #0000ff;
-  /* -webkit-text-stroke-color:#ff0000; */
+  -webkit-text-stroke-color:#ff0000;
   text-shadow:
     -.5px -.5px 0 #ff0000,
     0 -.5px 0 #ff0000,
@@ -282,4 +300,8 @@ div#name:hover span#b {
   border-top-left-radius: .8em;
   border-top-right-radius: .8em;
   box-shadow: 0 .5em .5em rgba(0, 0, 0, .2);
+}
+
+#navi p{
+
 }
