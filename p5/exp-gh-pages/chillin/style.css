@@ -1,0 +1,109 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+/*   background: rgb(27, 164, 175); */
+}
+
+canvas {
+  margin: auto;
+  display: block;
+}
+
+#input {
+  font-size: 16px;
+  border: 0;
+  border-radius: 0;
+  box-sizing: border-box;
+  width: 80%;
+  height: 40px;
+  text-transform: uppercase;
+}
+
+#button {
+  background: gold;
+  border: 0;
+  font-size: 12px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  width: 10%;
+  height: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#button:hover {
+ background: orange; 
+}
+
+#saveButton {
+  background: limegreen;
+  border: 0;
+  font-size: 12px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  width: 10%;
+  height: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/********** permission modal **********/
+.permission-modal-container {
+	width: 280px;
+	height: 160px;
+	position: absolute;
+	left: calc(50% - 140px);
+	top: calc(50% - 80px);
+	border-radius: 12px;
+/*	border: 1px solid hsl(46, 25%, 52%);*/
+	margin: 0;
+	padding: 0;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+
+	background-color: white;
+	font-family: sans-serif;
+	color: black;
+	font-weight: 700;
+	text-align: center;
+
+	overflow: hidden;
+/*	display: none;*/
+}
+
+.permission-modal-container p {
+	margin: 0;
+	padding: 24px;
+	height: 65%;
+	font-size: 16px;
+	letter-spacing: 0.2px;
+	line-height: 1.25;
+	box-sizing: border-box;
+}
+
+.permission-modal-container .button-container {
+	width: 100%;
+	height: calc(35% + 2px);
+	/* quick and dirty fix. meh. */
+	display: flex;
+	justify-content: center;
+}
+
+.permission-modal-container .button-container button {
+	width: 50%;
+	background: none;
+	color: black;
+	font-size: 16px;
+	letter-spacing: 0.2px;
+	border: none;
+	border-top: 1px solid hsl(46, 25%, 52%);
+}
+
+.permission-modal-container .button-container button:first-child {
+	border-right: 1px solid hsl(46, 25%, 52%);
+}
+
+.permission-modal-container .button-container button:hover {
+	cursor: pointer;
+	color: black;
+	background-color: lightskyblue;
+}

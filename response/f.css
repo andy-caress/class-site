@@ -1,0 +1,27 @@
+.body{
+  background: black;
+}
+
+.p1 {
+font-family: halyard-text, sans-serif;
+font-weight: 300;
+font-style: normal;
+color: white;
+font-size: 40px;
+line-height: 42px;
+}
+
+.h1{
+  font-family: halyard-display, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  color: white;
+}
+
+#img {
+  border:0;
+  padding:0;
+  width: 909.6px;
+  height: 389.994px;
+}

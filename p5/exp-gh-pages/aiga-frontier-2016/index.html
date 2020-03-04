@@ -1,0 +1,1096 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>AIGA Frontier 2016 presentation</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/my-night.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <style>
+      .reveal .slides {
+        text-align: left;
+      }
+      .reveal .slides section img {
+        border: none;
+        background: none;
+      }
+      .reveal .slides section a {
+        border-bottom: 3px dotted grey;
+      }
+      .reveal .slides section h3 {
+        line-height: 1.3em;
+      }
+      .reveal .slides section h4,
+      .reveal .slides section p,
+      .reveal .slides section li {
+        line-height: 1.7em;
+      }
+      
+      aside.notes p {
+        
+      }
+
+    </style>
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section><!---------- INTRO ---------->
+          <section>
+            <h1>Type+Media</h1>
+            <h4>
+              A Typography Course Based On Computer Programming
+            </h4>
+            <p style="margin-top: 8em; line-height: 0.5em;">
+              <small><a href="http://paperdove.com" target="_blank">Dae In Chung</a>, Maryland Institute College of Art</small>
+            </p>
+            <p>
+              <small><a href="http://typenadyou.com" target="_blank">Jiwon Lee</a>, Kookmin University, South Korea</small>
+            </p>
+            <p style="margin-top: 2em;"><small><a href="http://exp.paperdove.com/aiga-frontier-2016">http://exp.paperdove.com/aiga-frontier-2016</a></small></p>
+          </section>
+          <section>
+            <h2>Two Courses</h2>
+            <p><a href="http://kmu-typemedia.paperdove.com" target="_blank">Type+Media</a>, 2015</p>
+            <p><a href="https://docs.google.com/document/d/14qczwegcO8RdcQA4WoMUG2z4KNyh2bE5fj0zNs2VcEU/edit" target="_blank">DesignTech Workshop</a>, 2016</p>
+          </section>
+          <section>
+            <h3>
+              Explore what Korean typography could be in the digital age, where <span class="fragment highlight-blue">screen, online communication, animation and interaction</span> are considered common-sense.
+            </h3>
+            <aside class="notes">
+              <p>
+                This was our motivation. The emphasis is on “screen-based online communication where animation and interactions are pretty much given.”
+              </p>
+              <p>
+                Screen is a very energetic medium. Online data keeps getting updated, animation is great for providing context and with interactivity, we can adapt/respond to changing conditions.
+              </p>
+              <p>
+                The most of the contents we consume is through screen. We thought of exploring the communication method for the digital media.
+              </p>    
+            </aside>
+          </section>
+        </section><!-- INTRO -->
+        
+        <section><!---------- TYPOGRAPHY & CODING ---------->
+          <section>
+            <h2>Typography & Coding</h2>
+            <aside class="notes">
+              <p>
+                We decided, to be able to explore the digital media, it was necessary for students to learn to code, instead of relying on any existing tools.
+              </p>
+              <p>
+                We do use computer softwares to design, but when we directly work with the code, it provides interesting possibilities.
+              </p>   
+            </aside>
+          </section>
+          <section>
+            <h3>Working with systems and rules that create letterforms.</h3>
+            <aside class="notes">
+              <p>
+                Working with code means working with rules and systems that create letterforms, instead of working directly with the forms. We have to tell the machine how to do things.
+              </p>
+              <p>
+                Of course, type design requires a manual adjustment of each letterform, so computer programming is not the answer for every situation.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <h3>Working with variables and their range.</h3>
+            <video data-autoplay loop muted controls controls>
+              <source data-src="media/eks-demo.mov" />
+            </video>
+            <p><small><a href="http://paperdove.com/work/ekstasy-type-club.html">Ekstasy Type Club</a> by Dae In Chung</small></p>
+            <aside class="notes">
+              <p>
+                And we also work with the variables, and they have a range - minimum and maximum values. And that range is on the continuum. We don't have to break them into a few weights or shapes. We set variables for the things we want to control, and set the min/max values. If we push too hard, the forms will no longer be readable.
+              </p>
+              <p>
+                In this example, there are about 10 different variables with sliders. And the combination it can make is almost endless. Of course, not all the combinations will look good.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <h3>Mapping data to letterform</h3>
+            <ul>
+              <li>distance</li>
+              <li>temperature</li>
+              <li>time of the day</li>
+              <li>nuance</li>
+              <li>emotion</li>
+              <li>and more...</li>
+            </ul>
+            <aside class="notes">
+              <p>
+                These variables can create a relationship between inputs and outputs. We can map the data to letterform.
+              </p>
+              <p>
+                There are some data that are already presented as numeric form, such as distance, temperature or time of the day, etc. 
+              </p>
+              <p>
+                There are other types of data that are more subjective such as nuances and emotions. And they will have to be convertred to numbers that machine can understand.
+              </p>
+              <p>
+                The variables can change. Instead of having fixed values or forms, they can respond to different conditions and conveying different nuances.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <h4>Categorize sounds into groups based on their strength.</h4>
+            <ul>
+              <li>Stops: <span style="color: grey;">p, b, t, d, k, g, c, q, x</span> - 5 points</li>
+              <li>Fricatives: <span style="color: grey;">f, v, s, z, h, c, x</span> - 4 points</li>
+              <li>Affricates / Nasals / Lateral: <span style="color: grey;">j, m, n, l</span> - 3 points</li>
+              <li>Approximant: <span style="color: grey;">w, r, y</span> - 2 points</li>
+              <li>Vowels: <span style="color: grey;">a, e, i, o, u</span> - 1 point</li>
+              <li>word score = total score / number of letters</li>
+            </ul>
+            <p><small><a href="http://typeandyou.com/thesis/theory/" target="_blank">User Aspect Design</a> by Jiwon Lee</small></p>
+            <aside class="notes">
+              <p>
+                This is from my co-researcher, Jiwon's thesis. He categorized the sounds by its strength and gave different points to each. So when there is a word, we can calculate the word score by getting the total score of all the letters and dividing it by number of letters.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <img style="width: 60%;" src="images/compute-type/thesis-jiwon.jpg">
+            <p><small><a href="http://typeandyou.com/thesis/theory/" target="_blank">User Aspect Design</a> by Jiwon Lee</small></p>
+            <aside class="notes">
+              <p>
+                This shows how the form can be affected by the total score calculated.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <img src="images/maluma-takete.jpg">
+            <p><small>Maluma and Takete experiment by Wolfgang Köhler</small></p>
+            <aside class="notes">
+              <p>
+                We can find a similar experiment here done by a German psychologist. Participants were given two words, Maluma and Takete, and asked to link to one of the two forms. Which shape do you think is for the Maluma? I think most of us will connect Maluma with the first figure.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <video data-autoplay loop muted controls controls>
+              <source data-src="media/ios10-messages.m4v" />
+            </video>
+            <p><small>iOS 10 Messages App</small></p>
+            <aside class="notes">
+              <p>
+                Apple just released iOS 10 with some updates on the Messages app. Now, the app provides a way to express different nuances or tones of the message on a basic level.
+              </p>
+              <p>
+                In this case, would that be a surprised what or angry what?
+              </p>
+            </aside>
+          </section>
+          <section>
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/bcUo9ULvVq4?rel=0" frameborder="0" allowfullscreen></iframe>
+            <p><small>Adobe Max Project Faces</small></p>
+            <aside class="notes">
+              <p>
+                (From 1m10s to 2m20s)
+              </p>
+              <p>
+                The video is from Adobe Max event explaining the Project Faces. Here, the font is described with a skeleton and weights and width can be changed by manipulating the two sliders. And this is not an entirely new idea.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <img src="images/compute-type/laika-font.png">
+            <p><small><a href="http://www.laikafont.ch/" target="_blank">LAIKA Font</a></small></p>
+            <aside class="notes">
+              <p>
+                LAIKA font here maps mouseX and Y positions to different properties of type. There is no set weight or contrast. There are 2 variables working here, but we could add more to increase the range of expressions.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <img style="width: 60%;" src="images/compute-type/metafont2.png">
+            <p><small>Metafont by Donald Knuth (image from <a href="http://printingcode.runemadsen.com/lecture-typography/" target="_blank">Printing Code</a>)</small></p>
+            <aside class="notes">
+              <p>
+                This is Metafont by Donald Knuth, a computer scientist. It describes the skeleton and use mathematical equations to determine the thickness instead of outlines.
+              </p>
+              <p>
+                That is different from Open Type Fonts that we use, which describe the outline of a shape.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <p>
+              Meta-design is much more difficult than design;<br>
+              it’s easier to draw something than to explain how to draw it.<br>
+              &mdash; Donald Knuth, The Metafont Book
+            </p>
+            <aside class="notes">
+              <p>
+                Again, this is about creating a system and rules to create letterforms.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <img style="width: 70%;" src="images/compute-type/metaflop.png">
+            <p><small><a href="http://www.metaflop.com/" target="_blank">Metaflop</a></small></p>
+            <aside class="notes">
+              <p>
+                And this is a project based on Metafont. Because of the difficulty with working directly with the code, Metafont has not been very popular, so these people made it available for the web. You can adjust the forms directly and export it as a web font format.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <p>
+              ...we are aware that it is difficult to produce subtle and refined typographical fonts in the classical meaning. nevertheless we believe that there is a undeniable quality in parametric font design and we try to bring it closer to the world of the designers.<br>
+              &mdash; <a href="http://metaflop.com" target="_blank">metaflop.com</a>
+            </p>
+            <aside class="notes">
+              <p>
+                And this is a project based on Metafont. Because of the difficulty with working with the code, Metafont has not been very popular, so these people made it for the web. You can adjust the forms directly and export it as a web font format.
+              </p>
+            </aside>
+          </section>
+        </section><!-- TYPE AND CODE -->
+        
+        <section><!---------- HANGUL ---------->
+          <section>
+            <h2>Hangul</h2>
+            <h4>Korean written language</h4>
+            <aside class="notes">
+             <p>
+               So, those were some of the inspirations, and before I talk about the courses themselves, I want to talk about Hangul, Korean written language system as it has a unique characteristic, and because this is what we used in our courses.
+             </p>
+            </aside>
+          </section>
+          <section>
+            <p>
+              Hangul was invented by King Sejong in 1443.
+            </p>
+            <img src="images/hangul/hunmin.jpg">
+            <aside class="notes">
+              <p>
+                Hangul is interesting because there is a single person who designed it. We had a spoken language, but no written language so Koreans had to borrow Chinese characters. Korean and Chinese are very different, so it was not the ideal situation, and only the priviledged knew how to write. King Sejong wanted to make Hangul available for everyone.
+              </p>
+            </aside>
+          </section>
+          <!-- consonants -->
+          <section>
+            <p>Five basic consonants are designed after speech organs</p>
+            <img src="images/hangul/five-consonants.png">
+            <aside class="notes">
+              <p>
+                There are five basic consonants that are designed after speech organs. 
+              </p>
+              <p>
+                'ieung' is silent at the initial position. It's mostly used with vowels that follow.
+              </p>
+            </aside>
+          </section>
+          <section style="text-align: center;">
+            <img src="images/hangul/giyuk.png">
+            <h3>g, k</h3>
+            <aside class="notes">
+              <p>
+                'giyeok' resembles the shape of the throat and the tongue when making /g/ sound.
+              </p>
+            </aside>
+          </section>
+          <section style="text-align: center;">
+            <img src="images/hangul/niun.png">
+            <h3>n</h3>
+            <aside class="notes">
+              <p>
+                'nieun' resembles the shape of the tongue touching the roof of the mouth when making /n/ sound.
+              </p>
+            </aside>
+          </section>
+          <section style="text-align: center;">
+            <img src="images/hangul/mium.png">
+            <h3>m</h3>
+            <aside class="notes">
+              <p>
+                'mieum' resembles the shape of the mouth (front) when making /m/ sound.
+              </p>
+            </aside>
+          </section>
+          <section style="text-align: center;">
+            <img src="images/hangul/siot.png">
+            <h3>s</h3>
+            <aside class="notes">
+              <p>
+                'siot' resembles the shape of the tooth when making /s/ sound.
+              </p>
+            </aside>
+          </section>
+          <section style="text-align: center;">
+            <img src="images/hangul/ieng.png">
+            <h3>-ng</h3>
+            <aside class="notes">
+              'ieung' resembles the shape of the throat. It is silent most of the time, and used with vowels.
+            </aside>
+          </section>
+          <section>
+            <h2>Other consonants</h2>
+            <aside class="notes">
+              <p>
+                Other consonants are created by adding strokes to those five basic shapes based on how strong the sound is.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <p>Add strokes based on the strength of the sound</p>
+            <img src="images/hangul/other-consonants1.png">
+            <aside class="notes">
+              <p>
+                Here is 'mieum' with /m/ sound. Do you think you can imagine how we can extend the form by adding strokes to create /b/, /p/, /pp/ sounds?
+              </p>
+            </aside>
+          </section>
+          <section>
+            <p>Add strokes based on the strength of the sound</p>
+            <img src="images/hangul/other-consonants2.png">
+            <aside class="notes">
+              <p>
+                This is how it's done in Hangul. It's interesting to look at /b/ and /pp/. The same shape is repeated twice to express the strength.
+              </p>
+            </aside>
+          </section>
+          <!-- syllable -->
+          <section>
+            <h2>Syllable</h2>
+            <h4>Modular Design</h4>
+            <aside class="notes">
+              <p>
+                I will skip over the vowels and talk about how a syllable is made in Hangul.
+              </p>
+            </aside>
+          </section>
+          <section style="text-align: center;">
+            <img src="images/hangul/na.png">
+            <aside class="notes">
+              <p>
+                A syllable takes a modular design. There could be two or three components. Initial consonant + medial vowel + final consonant.
+              </p>
+              <p>
+                Here, it is creating /na/ sound.
+              </p>
+            </aside>
+          </section>
+          <section style="text-align: center;">
+            <img src="images/hangul/nam.png">
+            <aside class="notes">
+              <p>
+                When we add 'mieum' as the final consonant, it creates /nam/ sound.
+              </p>
+            </aside>
+          </section>
+          <section style="text-align: center;">
+            <img src="images/hangul/gam.png">
+            <aside class="notes">
+              <p>
+                We now replace the first consonant to 'giyeok', and it creates /gam/ sound.
+              </p>
+            </aside>
+          </section>
+          <section style="text-align: center;">
+            <img src="images/hangul/bal.png">
+          </section>
+          <section style="text-align: center;" data-background-image="images/hangul/all-letters.gif">
+            <h3>10,000+</h3>
+            <aside class="notes">
+              <p>
+                In theory, there are more than 10,000+ letters we can make using this modular system. But in reality, we do not use many of them, they exist as a possibility.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <img src="images/hangul-examples/modular-design.jpg">
+            <aside class="notes">
+              <p>
+                This modular system allows for interesting experiments.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <img src="images/hangul-examples/blessing.jpg">
+            <p><small>Jae Joon Han / 한재준</small></p>
+          </section>
+        </section><!-- HANGUL -->
+        
+        <section><!---------- GROUP EXERCISE ---------->
+          <section>
+            <h2>Time for an exercise!</h2>
+            <aside class="notes">
+              <p>
+                (about 15m)
+              </p>
+            </aside>
+          </section>
+          <section>
+            <h4>Think of a turtle at the center of paper.</h4>
+            <img src="images/exercise/turtle1.gif">
+          </section>
+          <section>
+            <h4>You will create instructions for it to follow and move.</h4>
+            <img src="images/exercise/turtle3.gif">
+          </section>
+          <section>
+            <h4>When the turtle moves, it leaves a trace.</h4>
+            <img src="images/exercise/turtle4.gif">
+          </section>
+          <section>
+            <h4>I will give you a shape to draw.</h4>
+            <img src="images/exercise/turtle5.gif">
+          </section>
+          <section>
+            <h4>Discuss as a group to decide what instructions/commands to use. Keep the instructions simple - a word and a number for each.</h4>
+          </section>
+          <section>
+            <h4>Describe <em>how</em>, not what to draw.</h4>
+            <h4><s>"Draw a big rectangle."</s></h4>
+            <h4><s>"Draw a lowercase b"</s></h4>
+            <aside class="notes">
+              <p>
+                Describe how, not what to draw. Don't say "draw a big rectangle" because it relies on what we already know. Same with "draw a lowercase b."
+              </p>
+            </aside>
+          </section>
+          <section>
+            <h4>Half the group will give instructions. <br>The other half will execute them.</h4>
+            <aside class="notes">
+              <p>
+                First, form a group, and discuss to come up with some instructions. Then, I will give you a shape to draw.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <img style="width: 40%;" src="images/exercise/turtle-shapes-e.gif">
+          </section>
+          <section>
+            <img style="width: 40%;"  src="images/exercise/turtle-shapes-a.gif">
+          </section>
+          <section>
+            <img style="width: 40%;"  src="images/exercise/turtle-shapes-s.gif">
+          </section>
+          <section>
+            <img style="float: left;" src="images/exercise/turtle-square.gif">
+            <pre style="box-shadow: none; font-size: 1em;">
+  TO SQUARE
+    FORWARD 100
+    RIGHT 90
+    FORWARD 100
+    RIGHT 90
+    FORWARD 100
+    RIGHT 90
+    FORWARD 100
+    RIGHT 90
+  END
+            </pre>
+            <p style="clear: both;"><small>from Mindstorm by Seymour Papert</small></p>
+            <aside class="notes">
+              <p>
+                This exercise is inspired by the book, Mindstorm and LOGO programming environment by Seymour Papert.
+              </p>
+              <p>
+                Here, we see two simple commands for the turtle to perform. And we can give this series of instruction a name; SQUARE. So, anytime we call SQUARE "function", it will perform the same instructions.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <img style="float: left;" src="images/exercise/turtle-square.gif">
+            <pre style="box-shadow: none; font-size: 1em;">
+  TO SQUARE
+    REPEAT 4
+    FORWARD 100
+    RIGHT 90
+  END
+            </pre>
+            <p style="clear: both;"><small>from Mindstorm by Seymour Papert</small></p>
+            <aside class="notes">
+              <p>
+                And because the same forward/right commands are repeated, we can tell it to repeat it 4 times.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <img style="float: left;" src="images/exercise/turtle-square.gif">
+            <pre style="box-shadow: none; font-size: 1em;">
+  TO SQUARE:SIZE
+    REPEAT 4
+    FORWARD :SIZE
+    RIGHT 90
+  END       
+            </pre> 
+            <p style="clear: both;"><small>from Mindstorm by Seymour Papert</small></p>  
+            <aside class="notes">
+              <p>
+                Now, instead of telling the turtle to draw the same square every time, we can abstract the distnce it moves and make it into a variable, SIZE. Then, we can call the SQUARE function with different numbers to draw squares in different sizes.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <ul>
+              <li>Parameterize</li>
+              <li>Function</li>
+              <li>Modularize</li>
+              <li>Iteration</li>
+            </ul>
+            <aside class="notes">
+              <p>
+               With this simple exercise, we can learn many important design concepts that are already familiar to software engineers.
+              </p>
+              <p>
+               1. Instead of saying 'draw a BIG square,' we  parameterize the SIZE to respond to different conditons.
+              </p>
+              <p>
+                2. The way we command the turtle, different actions it can take is a function. We also abstract the function SQUARE.
+              </p>
+              <p>
+                3. Each instruction is simple; move or turn. We can break down the complex instruction into smaller pieces.
+              </p>
+              <p>
+                4. We can develop the logic and test and repeat to improve it. That is an iteration.
+              </p>
+            </aside>
+          </section>
+        </section><!-- Group Exercise -->
+        
+        <section><!---------- COURSE 1: TYPE+MEDIA ---------->
+          <section>
+            <h2>Course 1: Type+Media, 2015</h2>
+            <h4>Instuctors: <a href="http://paperdove.com" target="_blank">Dae In Chung</a> & <a href="http://typeandyou.com" target="_blank">Jiwon Lee</a></h4>
+            <aside class="notes">
+              <p>
+                Now, I want to talk about the 2 courses. The T+M was taught by myself and Jiwon in 2015 in Kookmin University, Seoul, South Korea.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <h3>Objectives</h3>
+            <ul>
+              <li>Fundamentals of programming</li>
+              <li>Systematic way of thinking and working</li>
+              <li>Type that responds to conditions</li>
+            </ul>
+            <aside class="notes">
+              <p>
+                Our objectives were first,
+                1. teaching the fundamentals of programming because almost everybody in class didn't have any prior experience with coding. So we had to start from scratch.
+              </p>
+              <p>
+                2. Second, we wanted the students to get used to the systematic way of thinking and working, which is required to work with programming and creating a system.
+              </p>
+              <p>
+                And lastly, we wanted them to learn by doing. Instead of just doing simple exercises, we asked students to create individual interactive projects by the end of the semester.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <h3>Tools</h3>
+            <li><a href="http://processing.org" target="_blank">Processing</a> has a large user base and learning resources</li>
+            <li><a href="http://kmu-typemedia.paperdove.com" target="_blank">Course website</a> to help self-learning out of class.</li>
+            <aside class="notes">
+             <p>
+               We chose Processing programming language because it already has a large user base of visual artists and designers. It also has a lot of learning resources both online and offline.
+             </p>
+             <p>
+               We also created a course website with many examples. It was important that students have resources outside the course for self-learning.
+             </p>
+            </aside>
+          </section>
+          <section>
+            <h3>Course Topics Overview</h3>
+            <ul>
+              <li>Conditional Design</li>
+              <li>Drawing with Code</li>
+              <li>Variables & Functions</li>
+              <li>Individual Projects</li>
+            </ul>
+            <aside class="notes">
+              <p>
+                In terms of course topics, we started a semester with conditional design exercises, which I will talk about a little later.
+              </p>
+              <p>
+                Then, we started to learn to draw with code. And with simple exercises, we learned how to work with variables and functions
+              </p>
+              <p>
+                We ended the semester with individual projects, which we exhibited in a gallery setting.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <h3>Conditional Design</h3>
+            <p>...Our work focuses on processes rather than products: things that adapt to their environment, emphasize change and show difference... <br>
+            &mdash; <a href="http://conditionaldesign.org" target="_blank">conditionaldesign.org</a></p>
+            <aside class="notes">
+              <p>
+                As many of you may already know, conditional design is an exercise to come up with simple instructions for other people to follow. It was started by 4 dutch designers.
+              </p>
+              <p>
+                Here is an excerpt from their manifesto. "Our work focuses..."
+              </p>
+            </aside>
+          </section>
+          <section>
+            <img src="images/compute-type/conditional-design-w1.png">
+            <p><small><a href="http://conditionaldesign.org" target="_blank"\>conditionaldesign.org</a></small></p>
+            <aside class="notes">
+              <p>
+                At the bottom of the image, there is an instruction for the group to follow taking turns.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <iframe src="https://player.vimeo.com/video/6472992" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <p><small><a href="http://conditionaldesign.org" target="_blank"\>conditionaldesign.org</a></small></p>
+            <aside class="notes">
+              <p>
+                Conditional design describes the process, "how" to draw, not the final outcome. And because a word can be interpreted differently, the end result is not always the same.
+              </p>
+            </aside>
+          </section>
+          <section data-background-image="images/courses/conditional1.jpg">
+          
+          </section>
+          <section data-background-image="images/courses/conditional2.jpg">
+          
+          </section>
+          <section>
+            <h3>Drawing with Code</h3>
+            <img src="images/courses/draw-characters.jpg">
+            <aside class="notes">
+              <p>
+                Then, we set out to understand the coordinate system and draw shapes where we want.
+              </p>
+              <p>
+                It is an interesting and difficult process because everything must be expressed with numbers. It gives us a chance to realize how everything visual is translated to numbers and vice versa.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <h3>Must have intentions</h3>
+            <aside class="notes">
+              <p>
+                When students first start to draw with code, it is so easy and fun to rely on random values to create unexpected things. That is a great experiment on its own, but we asked students to work with the intentions in what they create because type should be used to communicate something.
+              </p>              
+              <p>
+                So, it is a matter of control vs. chaos. We create variables and control them, whether that's a value or a range or a change over time.
+              </p>
+              <p>
+                And I'd like to show you some examples from the T+M course now.
+              </p>
+            </aside>
+          </section>
+          <section><!----- typemedia student work ----->
+            <video style="width: 80%;" data-autoplay loop muted controls>
+              <source data-src="media/w-kimyujin.mov">
+            </video>
+            <p><small>Yu Jin Kim / 김유진</small></p>
+            <aside class="notes">
+              <p>
+                'tti-yong' describes the sound of a spring in Korean. It's like 'boing' in English. It translates the sound to form, movements and interaction. To achieve simple movements like that, the student had to learn how a bezier curve works and a little bit of physics for realistic movements.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <video style="width: 80%;" data-autoplay loop muted controls>
+              <source data-src="media/w-limcheoljun.mov">
+            </video>
+            <p><small>Cheol Jun Lim / 임철준</small></p>
+            <aside class="notes">
+              <p>
+                The student created a modular input system for Hangul, only using arcs. Animation reveals how all the components are combined, and it is possible to vary the weight, opacity to create a family type.
+              </p>
+              <p>
+                It is also a tool itself for designers to work with.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <video style="width: 80%;" data-autoplay loop muted controls>
+              <source data-src="media/w-parkseyeon.mov">
+            </video>
+            <p><small>Se Yeon Park / 박세연</small></p>
+            <aside class="notes">
+              <p>
+                This work is based on student's personal experience. We Koreans have to use two language settings on our keyboard, so often times we make mistakes of forgetting to change the settings and typing with English characters.
+              </p>
+              <p>
+                The student created a similar design for both languages using simple geometric forms, and also the smooth transition of animation make them work together well in the system.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <video style="width: 80%;" data-autoplay loop muted controls>
+              <source data-src="media/w-sohnhyolim.mov">
+            </video>
+            <p><small>Hyolim Sohn / 손효림</small></p>
+            <aside class="notes">
+              <p>
+                Taking the idea from Hangul's modular design, this work creates random and unlikely combinations using Hangul characters.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <video style="width: 80%;" data-autoplay loop muted controls>
+              <source data-src="media/w-hwangsunah.mov">
+            </video>
+            <p><small>SunAh Hwang / 황선아</small></p>
+            <aside class="notes">
+              <p>
+                When the user blows into a microphone, the shapes start to rotate. The student wanted to express the feeling of wind and cloud.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <video style="width: 80%;" data-autoplay loop muted controls>
+              <source data-src="media/w-leesaebom.mov">
+            </video>
+            <p><small>Saebom Lee / 이새봄</small></p>
+            <aside class="notes">
+              <p>
+                The message here is "It's all for you," which is often said by older generations. This is a cynical take on the advice from them. The phrase starts to deform and become unreadable. As we see the progression through animation and interaction, it gives us a better context.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <video style="width: 80%;" data-autoplay loop muted controls>
+              <source data-src="media/w-jungshinjae.mov">
+            </video>
+            <p><small>Shinjae Jung / 정신재</small></p>
+            <aside class="notes">
+              <p>
+                The student thought about a different way to use emoticons. Koreans use a lot of emoticons when chatting online. All the shapes used here are from Korean Hangul characters.
+              </p>
+              <p>
+                The user's facial expressions are now part of the emoticon, so it makes more personal and nuanced communication possible.
+              </p>
+              <p>
+                Face tracking is done by using already available open source library.
+              </p>
+            </aside>
+          </section>
+        </section><!-- COURSE: TYPE+MEDIA -->
+        
+        <section><!---------- COURSE: DESIGNTECH ---------->
+          <section>
+            <h2>Course 2: DesignTech Workshop</h2>
+            <h4>Instructors: <a href="http://typeandyou.com" target="_blank">Jiwon Lee</a> & <a href="http://nacyot.com/" target="_blank">Daegwon Kim</a></h4>
+            <aside class="notes">
+              <p>
+                After we taught T+M, we thought about improving it a little bit, and offered DesignTech Workshop just this Summer. It was taught by Jiwon and Daegwon, who is a professional software engineer. I will talk about the course on behalf of them.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <h3>Objectives</h3>
+            <ul>
+              <li>Fundamentals of programming</li>
+              <li>Systematic way of thinking and working</li>
+              <li>Type that responds to conditions</li>
+              <li>Practical applications</li>
+            </ul>
+            <aside class="notes">
+              <p>
+                We mostly had the same objectives. There are not many designers who already has the foundations in programming. So every time we teach, we have to start from scratch.
+              </p>
+              <p>
+                Same systematic thinking and working, and creating type that responds to conditions.
+              </p>
+              <p>
+                We had one added goal, which is to make the projects usable in a real situation. We wanted the end result to be practical applications.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <h3>Tools</h3>
+            <p>Moved from Processing to <a href="http://p5js.org" target="_blank">p5.js</a>. It is similar to Processing. It works on the browser and mobile devices.</p>
+            <aside class="notes">
+              <p>
+                We moved from using Processing to P5.js. It is very similar to Processing. As a javascript library, it works directly on the browser and mobile devices without any extra setup, which could mean we can reach a wider audience.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <h3>Course Topics Overview</h3>
+            <ul>
+              <li>Conditional Design</li>
+              <li>Selective topics on programming</li>
+              <li>Individual projects</li>
+            </ul>
+            <aside class="notes">
+              <p>
+                Course topics were almost the same. 
+              </p>
+            </aside>
+          </section>
+          <section data-background-image="images/courses/dtech-cd1.JPG">
+            <aside class="notes">
+              <p>
+                This time when we did conditional design, instead of creating random visuals, we built instructions that will actually create Korean letterforms.
+              </p>
+            </aside>
+          </section>
+          <section data-background-image="images/courses/dtech-cd2.JPG">
+            
+          </section>
+          <section data-background-image="images/courses/dtech-cd3.JPG">
+            
+          </section>
+          <section>
+            <h3>Programming fundamentals</h3>
+            <ul>
+              <li>function &mdash; type design</li>
+              <li>coordinates &mdash; type setting</li>
+              <li>variable, loop, conditional &mdash; animation, interaction</li>
+              <li>automata &mdash; Hangul character input</li>
+            </ul>
+            <aside class="notes">
+              <p>
+                Instead of going over every detail about programming like a textbook, we tried to relate as much as possible to typography.
+              </p>
+              <p>
+                It was about setting the right context such as functions are used to design type, coordinates to set type, variable/loop/conditional are used to create animation and interaction.
+              </p>
+              <p>
+                Automata was used to enable Hangul input from users. Because of Hangul's unique combination system, it is technically more difficult to display text. We used an open-source automata algorithm for that.
+              </p>
+            </aside>
+          </section>
+          <section><!----- designtech student work ----->
+            <video style="width: 80%" data-autoplay loop muted controls>
+              <source data-src="media/dt-yumi.mp4">
+            </video>
+            <p><small><a href="https://nacyot.github.io/hdt-demo/dist/kim-taekyung--jung-yumi/index.html" target="_blank">Taegyoung Kim & Yumi Jung / 김태경 & 정유미</a></small></p>
+            <aside class="notes">
+              <p>
+                This project uses a gyroscope sensor on mobile devices. And now it's also possible to directly type in the browser.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <img style="width: 80%;" src="images/students/dt-jungmin2.jpg">
+            <p><small><a href="https://nacyot.github.io/hdt-demo/dist/lee-jungmin/index.html" target="_blank">Jung Min Lee / 이정민</a></small></p>
+            <aside class="notes">
+              <p>
+                This project is inspired by the orbital motion of planets. We can type into it and adjust the sliders.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <h3>Things We Learned</h3>
+            <ul>
+              <li>Designer's perspective</li>
+              <li>Team teaching</li>
+              <li>Design process</li>
+              <li>Communication</li>
+            </ul>
+            <aside class="notes">
+              <p>
+                By teaching two courses, here are a few things we learned along the way.
+              </p>
+              <p>
+                1. First, we learned that it was important to teach and approach from a designer's perspective. Making the difficult process of learning code a little more friendly and using the relevant examples for the designers.
+              </p>
+              <p>
+                2. Team teaching was also quite effective. For T+M, Jiwon was more traditionally trained designer and I was more interested in animation and technology. So, we could balance our opinions and provide different perspectives to students. And for DesignTech workshop, Daegwon is a software engineer, so he was able to provide a better technical assistance.
+              </p>
+              <p>
+                3. It also gave us a chance to think about our design process. Moving the focus from making individual outcomes to designing a system. There are also many design concepts that programmers use such as modularization and iteration that also help the design process.
+              </p>
+              <p>
+                4. We also had a chance to think about communication between machine and designer as well as communication between this type of work and the audience.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <h3>Challenges</h3>
+            <ul>
+              <li>Programming is hard...</li>
+              <li>One semester is not long enough.</li>
+              <li>Loss of interest; no further opportunity</li>
+              <li>Nobody to ask questions.</li>
+            </ul>
+            <aside class="notes">
+              <p>
+                We also had many challenges that we do not have all the answers yet.
+              </p>
+              <p>
+                1. Programming is really hard. Just the thought of the numbers and mathematics was enough to make students overwhelmed and be afraid even before they try it themlselves.
+              </p>
+              <p>
+                2. One semester was not long enough to cover both typography and coding, especially because we had to start from scratch in teaching coding. Students were left under a lot of pressure and it was hard to plan ahead when they were not sure if they could make it or not.
+              </p>
+              <p>
+                3. After finishing the semester, I (unofficially) tracked the students from the class to see if they continued to work in the area, and found only a very few were still working with the code. When there is no connection to other courses in the curriculum, it is difficult to keep the interests. Students usually have very tight deadlines, and this way of working, which requires a lot of planning, abstraction and debugging, is not very attractive.
+              </p>
+              <p>
+                4. I always say to students that Google is your best friend. But, when they are first starting, even knowing how to ask the right questions can be difficult. And when I look around, not a lot of graphic design program has a full-time faculty member who is knowledgible in this intersection, so students do not have a resource they can use in school.
+              </p>
+            </aside>
+          </section>
+        </section><!-- COURSE: DESIGNTECH -->
+        
+        <section><!---------- FINAL THOUGHTS ---------->
+          
+          <section>
+            <h3>Do designers have to code?</h3>
+            <aside class="notes">
+              <p>
+                So the coding is hard. Then do designers have to code?
+              </p>
+            </aside>
+          </section>
+          <section>
+            <p>All artists and designers in the 21st century should have experience programming their own software… If the person is unable to shape the tool they are shaped and moulded by another person’s idea of what the software is and what software can be.” <br>
+            &mdash; Casey Reas</p> 
+            <aside class="notes">
+              <p>
+                Casey Reas, the founder of Processing and UCLA professor, said this. If a computer is a tool that we use to design, we will need to understand the tool better.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <img src="images/final/paperjs.png">
+            <p><small><a href="http://paperjs.org/examples/hit-testing/" target="_blank">Paper.js</a> by Jürg Lehni</small></p>
+            <aside class="notes">
+              <p>
+                There are also designers who make tools for designers. Jurg Lehni created an Illustrator scripting plugin called Scriptographer, but every time Adobe makes updates to the software, they changed how the scripting worked, and he said he couldn't follow up with it. So, now, he is working on paper.js, a javascript library, which is basically mini Illustrator that works on the web.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <iframe src="https://player.vimeo.com/video/57749978" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <p><small><a href="http://basiljs.ch/" target="_blank">Basil.js</a></small></p>
+            <aside class="notes">
+              <p>
+                Basil.js is another example. It is a scripting environment for Adobe InDesign. It allows to use the power of scripting in editorial design.
+              </p>
+              <p>
+                In this video, every word from the document goes through searching for a product with the same word, and the words are replaced with those product images through the script.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <h3>What machines can do and what designers can do</h3>
+            <aside class="notes">
+              <p>
+                Recent developments in technology and machine learning challenge designers in many ways. We will have to think about what machines can do and what designers can do.
+              </p>
+            </aside>
+          </section>
+<!--
+          <section>
+            <img style="float: left; width: 45%; margin-right: 5%;" src="images/final/deepdream1.jpg">
+            <img style="float: left; width: 45%;" src="images/final/deepdream2.jpg">
+            <p style="clear:both;"><small><a href="https://research.googleblog.com/2015/06/inceptionism-going-deeper-into-neural.html" target="_blank">DeepDream</a> exercise</small></p>
+          </section>
+-->
+          <section>
+            <img style="width: 60%;" src="images/final/netflix-face.gif">
+            <p><small><a href="http://techblog.netflix.com/2016/03/extracting-image-metadata-at-scale.html" target="_blank">Netflix thumbnail generating algorithm</a></small></p>
+            <aside class="notes">
+              <p>
+                Netflix has lots and lots of movie thumbnails to create for every movie they have in the collection. And they developed an algorithm where the machine can understand the main figure in an image, not just a human figure, but anything that it thinks is the main object. And it can crop the image in multiple formats without cutting the main figure. It can also place the text not covering the main figure.
+              </p>
+              <p>If the real designers were to do this, what does it mean to cut thousands of photos one by one and place the text in the right place? How long is it going to take?</p>
+            </aside>
+          </section>
+          <section>
+            <img style="float: left; width: 45%; margin-right: 5%;" src="images/final/bernhardsson2.png" >
+            <img style="float: left; width: 40%; margin-right: 5%;" src="images/final/bernhardsson3.png" >
+            <p style="clear: both;"><small><a href="https://erikbern.com/2016/01/21/analyzing-50k-fonts-using-deep-neural-networks/" target="_blank">Erik Bernhardsson</a></small></p>
+            <aside class="notes">
+              <p>
+                In this example, Erik Bernhardsson, a software engineer, collected 50,000 fonts online using a script. Then, he trained the machine with those 50k fonts.
+              </p>
+              <p>
+                On the left image, he showed the machine all the characters of a font except one, and made it guess by looking at all the other characters. The actual character from a font is on the left, and the one the machine guessed is on the right. whether the machine correctly guessed or not may not be very important, but looking at these shapes may give us new ideas.
+              </p>
+              <p>
+                On the right image, He gave four As on each corner, and have the machine interpolate the inbetweens.
+              </p>
+              <p>
+                We could imagine that the machine can be useful in designing a typeface, or at least we can ask it to visualize some possibilities.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <p>I can build something bigger than what I can imagine...<br>
+            The machine is your extension.<br>
+            &mdash; <a href="https://vimeo.com/157167520" target="_blank">Manfred Mohr</a></p>
+            <aside class="notes">
+              <p>
+                Manfred Mohr, a pioneer in digital arts said.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/E2SxqUvtpIk?rel=0" frameborder="0" allowfullscreen></iframe>
+            <p><small>The Future of Making Things: Generative Design from Autodesk</small></p>
+            <aside class="notes">
+              <p>
+                The machine is seen as a collaborator that helps us achieve our goals.
+              </p>
+            </aside>
+          </section>
+          <section>
+            <h3>Intelligence Amplification</h3>
+            <p>
+              The distinction between AI and IA is as simple as it is significant. AI makes machines autonomous and detached from humans; IA, in on the other hand, puts humans in control and leverages computing power to amplify our capabilities.<br>
+              &mdash; <a href="https://www.wired.com/2016/01/forget-ai-the-human-friendly-future-of-computing-is-already-here/" target="_blank">Wired.com</a>
+            </p>
+            <aside class="notes">
+              <p>
+                Machines may not replace the designers entirely in the near future . We have a vision, sensibility and intuition which machines do not have yet. 
+              </p>
+            </aside>
+          </section>
+          <section>
+            <h3>What is the role of technology in design? What is the role of a designer in technology?</h3>
+          </section>
+        </section>
+        
+        <section><!---------- THANK YOU ---------->
+          <h2>Thank you.</h2>
+          <p><a href="http://exp.paperdove.com/aiga-frontier-2016">http://exp.paperdove.com/aiga-frontier-2016</a></p>
+        </section><!-- thank you -->
+      </div><!-- slides -->
+    </div><!-- reveal -->
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+        // More info https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            history: true,
+            backgroundTransition: 'none',
+            transition: 'none', // none/fade/slide/convex/concave/zoom
+
+            // More info https://github.com/hakimel/reveal.js#dependencies
+            dependencies: [
+                { src: 'plugin/markdown/marked.js' },
+                { src: 'plugin/markdown/markdown.js' },
+                { src: 'plugin/notes/notes.js', async: true },
+                { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+            ]
+        });
+    </script>
+  </body>
+</html>
