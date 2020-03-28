@@ -125,6 +125,16 @@ div#name:hover span#b {
   transform: .3s ease;
 }
 
+.btn6 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: fixed;
+  transition: background .3s ease;
+  transform: .3s ease;
+}
+
 .btn:hover {
   /* background: #ffffff; */
   flex-direction: row;
@@ -164,6 +174,14 @@ div#name:hover span#b {
 }
 
 .btn5:hover {
+  flex-direction: row;
+  mix-blend-mode: difference;
+  background: transparent;
+  background: #fff;
+  text-shadow: none;
+}
+
+.btn6:hover {
   flex-direction: row;
   mix-blend-mode: difference;
   background: transparent;
@@ -415,6 +433,34 @@ div#name:hover span#b {
   text-decoration: none;
   top: 70%;
   right: 15%;
+  bottom: -1%;
+  border-top-left-radius: .8em;
+  border-top-right-radius: .8em;
+  box-shadow: 0 .5em .5em rgba(0, 0, 0, .2);
+}
+
+.portfolio-btn6 {
+  /* background-color: #ff0000; */
+  border-style: solid;
+  border-width: 1px;
+  font-family: halyard-display, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #0000ff;
+  text-shadow:
+    -.5px -.5px 0 #ff0000,
+    0 -.5px 0 #ff0000,
+    .5px -.5px 0 #ff0000,
+    .5px 0 0 #ff0000,
+    .5px .5px 0 #ff0000,
+    0 .5px 0 #ff0000,
+    -.5px .5px 0 #ff0000,
+    -.5px 0 0 #ff0000;
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+  top: 50%;
+  left: 40%;
   bottom: -1%;
   border-top-left-radius: .8em;
   border-top-right-radius: .8em;
