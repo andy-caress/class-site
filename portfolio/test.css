@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: none;
+
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+}
+
+.border {
+  max-height: 93%;
+  max-width: 90%;
+  margin: auto;
+  border: 4px solid blue;
+  z-index: 1;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+img {
+  filter: blur(5px);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 2%;
+  width: 90%;
+  height: 90%;
+}
+
+.foo img:first-child {
+  background-repeat:repeat repeat;
+  background-size: 200px 200px;
+}
+
+
+/* .img {
+  background-image: url("childhood.jpg");
+  background-repeat:repeat repeat;
+  padding:10px;
+  background-size: 200px 200px;
+} */
