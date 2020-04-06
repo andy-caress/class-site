@@ -1,48 +1,27 @@
-body {
-  margin: 0;
-  padding: 0;
-  overflow: none;
-
+#name {
+  color: #0000ff;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  white-space: nowrap;
 }
 
-.container {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  position: fixed;
+#b:hover {
 }
 
-.border {
-  max-height: 93%;
-  max-width: 90%;
-  margin: auto;
-  border: 4px solid blue;
-  z-index: 1;
-  object-fit: cover;
-  overflow: hidden;
+div#name span#a {
+  display: inline;
 }
 
-img {
-  filter: blur(5px);
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  padding: 2%;
-  width: 90%;
-  height: 90%;
+div#name:hover span#a {
+  display: none;
 }
 
-.foo img:first-child {
-  background-repeat:repeat repeat;
-  background-size: 200px 200px;
+div#name span#b {
+  display: none;
 }
 
-
-/* .img {
-  background-image: url("childhood.jpg");
-  background-repeat:repeat repeat;
-  padding:10px;
-  background-size: 200px 200px;
-} */
+div#name:hover span#b {
+  display: inline;
+}
